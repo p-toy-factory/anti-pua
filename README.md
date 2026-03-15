@@ -8,6 +8,8 @@
 
 Anti-PUA Skill 保留了结构化调试方法论的价值，用健康的沟通方式替代 PUA 话术，让效率和尊重共存。
 
+**[查看在线文档 & 演示 →](https://anti-pua.vercel.app/)**
+
 ## 三个核心 Skill
 
 | Skill | 触发方式 | 作用 |
