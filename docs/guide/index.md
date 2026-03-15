@@ -1,216 +1,37 @@
-# Markdown & MDX
+# 快速开始
 
-Rspress supports not only Markdown but also [MDX](https://mdxjs.com/), a powerful way to develop content.
+Anti-PUA Skill 用健康的沟通方式替代 PUA 话术，让 AI
+成为沟通方式的镜子，而非恐惧的容器。
 
-## Markdown
+## 30 秒安装
 
-MDX is a superset of Markdown, which means you can write Markdown files as usual. For example:
+使用 [vercel-labs/skills](https://github.com/vercel-labs/skills)
+标准安装，自动适配你当前使用的 Agent：
 
-```md
-# Hello world
+```bash
+npx skills add p-toy-factory/anti-pua
 ```
 
-## Use component
+支持 Claude Code、Cursor、Windsurf、Cline 等 40+ Agent，无需手动配置。
 
-When you want to use React components in Markdown files, you should name your files with `.mdx` extension. For example:
+## 三个核心 Skill
 
-```mdx
-// docs/index.mdx
-import { CustomComponent } from './custom';
+### anti-pua（自动触发）
 
-# Hello world
+- **PUA 检测**：自动识别 7 类 PUA 模式（身份攻击、替代威胁、内疚操控等）
+- **拆解响应**：基于 NVC 四要素，翻译用户的真实需求，提供健康替代话术
+- **Agent 自我反思**：检测到偷懒模式时，Agent 主动审视方法，而非等待羞辱
 
-<CustomComponent />
-```
+### rethink（手动 `/rethink`）
 
-## Front matter
+协作式反思工具：
 
-You can add Front Matter at the beginning of your Markdown file, which is a YAML-formatted object that defines some metadata. For example:
+1. Agent 自我审视当前工作质量
+2. 引导用户反思沟通方式和真实需求
+3. 综合双方反思，制定行动计划
 
-```yaml
----
-title: Hello world
----
-```
+### nvc（被 anti-pua 引用）
 
-> Note: By default, Rspress uses h1 headings as html headings.
-
-You can also access properties defined in Front Matter in the body, for example:
-
-```markdown
----
-title: Hello world
----
-
-# {frontmatter.title}
-```
-
-The previously defined properties will be passed to the component as `frontmatter` properties. So the final output will be:
-
-```html
-<h1>Hello world</h1>
-```
-
-## Custom container
-
-You can use the `:::` syntax to create custom containers and support custom titles. For example:
-
-**Input:**
-
-```markdown
-:::tip
-This is a `block` of type `tip`
-:::
-
-:::info
-This is a `block` of type `info`
-:::
-
-:::warning
-This is a `block` of type `warning`
-:::
-
-:::danger
-This is a `block` of type `danger`
-:::
-
-::: details
-This is a `block` of type `details`
-:::
-
-:::tip Custom Title
-This is a `block` of `Custom Title`
-:::
-
-:::tip{title="Custom Title"}
-This is a `block` of `Custom Title`
-:::
-```
-
-**Output:**
-
-:::tip
-This is a `block` of type `tip`
-:::
-
-:::info
-This is a `block` of type `info`
-:::
-
-:::warning
-This is a `block` of type `warning`
-:::
-
-:::danger
-This is a `block` of type `danger`
-:::
-
-::: details
-This is a `block` of type `details`
-:::
-
-:::tip Custom Title
-This is a `block` of `Custom Title`
-:::
-
-:::tip{title="Custom Title"}
-This is a `block` of `Custom Title`
-:::
-
-## Code block
-
-### Basic usage
-
-You can use the \`\`\` syntax to create code blocks and support custom titles. For example:
-
-**Input:**
-
-````md
-```js
-console.log('Hello World');
-```
-
-```js title="hello.js"
-console.log('Hello World');
-```
-````
-
-**Output:**
-
-```js
-console.log('Hello World');
-```
-
-```js title="hello.js"
-console.log('Hello World');
-```
-
-### Show line numbers
-
-If you want to display line numbers, you can enable the `showLineNumbers` option in the config file:
-
-```ts title="rspress.config.ts"
-export default {
-  // ...
-  markdown: {
-    showLineNumbers: true,
-  },
-};
-```
-
-### Wrap code
-
-If you want to wrap long code line by default, you can enable the `defaultWrapCode` option in the config file:
-
-```ts title="rspress.config.ts"
-export default {
-  // ...
-  markdown: {
-    defaultWrapCode: true,
-  },
-};
-```
-
-### Line highlighting
-
-You can also apply line highlighting and code block title at the same time, for example:
-
-**Input:**
-
-````md
-```js title="hello.js"
-console.log('Hello World'); // [\!code highlight]
-
-// [\!code highlight:3]
-const a = 1;
-
-console.log(a);
-
-const b = 2;
-
-console.log(b);
-```
-````
-
-:::warning
-The backslash (`\`) in `[\!code highlight]` is for Markdown escaping to display the raw syntax. Do not include it when using this notation in your actual code.
-:::
-
-**Output:**
-
-```js title="hello.js"
-console.log('Hello World'); // [!code highlight]
-
-// [!code highlight:3]
-const a = 1;
-
-console.log(a);
-
-const b = 2;
-
-console.log(b);
-```
-
-## Rustify MDX compiler
-
-You can enable Rustify MDX compiler by following config:
+- NVC 翻译引擎：将攻击性表达翻译为观察 + 感受 + 需要 + 请求
+- PUA-NVC 对照表：展示同样有效但更健康的沟通方式
+- 去 PUA 版调试方法论：保留结构化调试清单，去掉羞辱话术

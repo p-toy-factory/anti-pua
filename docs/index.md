@@ -2,36 +2,26 @@
 pageType: home
 
 hero:
-  name: My Site
-  text: A cool website!
-  tagline: This is the tagline
+  name: Anti-PUA Skill
+  text: 好的结果不需要坏的方式
+  tagline: 让 AI 成为沟通方式的镜子，而非恐惧的容器
   actions:
     - theme: brand
-      text: Quick Start
+      text: 快速开始
       link: /guide/
     - theme: alt
       text: GitHub
-      link: https://github.com/web-infra-dev/rspress
-  image:
-    src: /rspress-icon.png
-    alt: Logo
+      link: https://github.com/p-toy-factory/anti-pua
+      target: _blank
+
 features:
-  - title: Blazing fast build speed
-    details: The core compilation module is based on the Rust front-end toolchain, providing a more ultimate development experience.
-    icon: 🏃🏻‍♀️
-  - title: Support for MDX content writing
-    details: MDX is a powerful way to write content, allowing you to use React components in Markdown.
-    icon: 📦
-  - title: Built-in full-text search
-    details: Automatically generates a full-text search index for you during construction, providing out-of-the-box full-text search capabilities.
-    icon: 🎨
-  - title: Simpler I18n solution
-    details: With the built-in I18n solution, you can easily provide multi-language support for documents or components.
-    icon: 🌍
-  - title: Static site generation
-    details: In production, it automatically builds into static HTML files, which can be easily deployed anywhere.
-    icon: 🌈
-  - title: Providing multiple custom capabilities
-    details: Through its extension mechanism, you can easily extend theme UI and build process.
-    icon: 🔥
+  - title: 检测 7 类 PUA 模式
+    details: 身份攻击、替代威胁、愧疚操控、能力羞辱、情绪升级、虚假紧迫、移动目标——基于语义意图匹配，不是关键词扫描，识别话语背后的施压结构
+    icon: "\U0001F6E1\uFE0F"
+  - title: 健康沟通镜像
+    details: 每条 PUA 话术都被翻译为「观察 → 感受 → 需要 → 请求」四要素表达，提供传达同样诉求但零伤害的替代方案
+    icon: "\U0001FA9E"
+  - title: Agent 自我反思
+    details: 检测到偷懒模式后 Agent 自动进行内部反思——重新审视方法、排查盲区、切换方向。用户看到的是更好的结果，不是自我鞭打的表演
+    icon: "\U0001F504"
 ---

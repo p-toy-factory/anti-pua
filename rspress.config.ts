@@ -3,18 +3,18 @@ import { defineConfig } from '@rspress/core';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  title: 'My Site',
-  icon: '/rspress-icon.png',
-  logo: {
-    light: '/rspress-light-logo.png',
-    dark: '/rspress-dark-logo.png',
-  },
+  globalStyles: path.join(__dirname, 'tailwind.css'),
+  title: 'Anti-PUA Skill',
+  description:
+    '好的结果不需要坏的方式 — 让 AI 成为沟通方式的镜子，而非恐惧的容器',
+  lang: 'zh',
+  logoText: 'Anti-PUA',
   themeConfig: {
     socialLinks: [
       {
         icon: 'github',
         mode: 'link',
-        content: 'https://github.com/web-infra-dev/rspress',
+        content: 'https://github.com/p-toy-factory/anti-pua',
       },
     ],
   },
