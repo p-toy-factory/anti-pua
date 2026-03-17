@@ -1,6 +1,6 @@
 # Anti-PUA 工作看板
 
-> 最后更新：2026-03-15
+> 最后更新：2026-03-17
 
 ## Alpha 发布进度
 
@@ -8,9 +8,9 @@
 
 | 工作项                     | 状态 | 备注                                                            |
 | -------------------------- | ---- | --------------------------------------------------------------- |
-| `skills/anti-pua/SKILL.md` | Done | DETECT + DISARM + SELF-REFLECT + 人格框架 + 分级响应 + 场景指南 |
+| `skills/anti-pua/SKILL.md` | Done | DETECT（7 类 + 企业风味 + L1-L4）+ DISARM + SELF-REFLECT + 人格框架 + 分级响应 + 场景指南 + 反合理化护盾 |
 | `skills/rethink/SKILL.md`  | Done | 三阶段协作反思流程 + 扩展命令                                   |
-| `skills/nvc/SKILL.md`      | Done | NVC 翻译引擎 + PUA-NVC 对照表 + 调试方法论 + 响应模板           |
+| `skills/nvc/SKILL.md`      | Done | NVC 翻译引擎 + PUA-NVC 对照表 + 调试方法论 + 方法论提取器 + 响应模板 |
 
 ### Week 2：文档与发布准备
 
@@ -21,7 +21,7 @@
 | 文档 - 快速开始     | Done        | `docs/guide/index.md`                                 |
 | 文档 - 使用场景     | Done        | `docs/guide/usage.md` 4 个场景演练                    |
 | 文档 - 理论基础     | Done        | `docs/theory/index.md` + `nvc.md`                     |
-| 文档 - PUA 模式详解 | In Progress | `docs/theory/pua-patterns.md` 仅完成 3/7 模式，缺 4-7 |
+| 文档 - PUA 模式详解 | Done        | `docs/theory/pua-patterns.md` 7 类 + 隐性 PUA + 企业风味 + 分级升级 |
 | 文档 - Skill 介绍页 | Done        | `docs/skills/anti-pua.md` / `rethink.md` / `nvc.md`   |
 | `README.md`         | Done        | 中文，含安装说明 + 开发指南                           |
 
@@ -30,7 +30,7 @@
 | 工作项                          | 状态 | 备注                             |
 | ------------------------------- | ---- | -------------------------------- |
 | vercel-labs/skills 格式适配验证 | Todo | 确认 `npx skills add` 流程可用   |
-| 基础场景人工验证                | Todo | 3-5 个核心场景手动测试           |
+| 基础场景人工验证                | Todo | 6 个核心场景手动测试（含企业风味、L1-L4、方法论提取等） |
 | GitHub Alpha Release            | Todo | 打 Alpha tag，撰写 Release Notes |
 | 中文开发者社区推广              | Todo |                                  |
 
